@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='navbar-container'>
             <div className="logo">
                 <Link href="/">
-                    JSM Headphones
+                    <h4 className='ohmyim-shop'>OhmYim Shop</h4>
                 </Link>
             </div>
 
