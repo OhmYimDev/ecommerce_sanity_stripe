@@ -2,8 +2,11 @@ import React, { useEffect } from 'react'
 import { BsBagCheckFill } from 'react-icons/bs';
 import Link from 'next/link'
 import { runFireworks } from '../lib/utils';
+import { useStateContext } from '../context/StateContext';
 
 const Success = () => {
+    const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
+
     useEffect(() => {
         localStorage.clear();
         setCartItems([]);
